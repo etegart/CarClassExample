@@ -6,7 +6,14 @@ namespace CarClassExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            Car car = new Car();
+
+            car.GasLevel = 10f;
+            car.AddGas(2);
+
+            Console.WriteLine(car.FillUp());
+            Console.ReadLine();
         }
     }
 }
